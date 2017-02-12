@@ -3,7 +3,7 @@
 #include <time.h>
 using namespace std;
 int flag =0 ;
-int count =0;
+int amount =0;
 class Question {
       public :
              int randNum();
@@ -150,7 +150,6 @@ void Fraction(){
     int a,b,c,d,g1,g2,g3;
     int son,mom,num[5];
     char s[5],ch;
-    srand(time(NULL));
     a=1+rand()%5;
     b=1+rand()%5;
     c=6+rand()%5;
@@ -175,6 +174,11 @@ void Fraction(){
      ch=s[t];
      switch(ch)
      {
+      case 'g': cout <<"答对了"<<amount<<"道题"<<endl;
+                cout <<"程序将退出。。。。"<<endl;
+                getchar();
+                getchar();    
+                exit(0);    
       case '/': break;
       default : e=0;
                while(ch>='0' && ch<='9')   /*判定为数字字符*/
@@ -189,19 +193,18 @@ void Fraction(){
      }
                           
     }
-    if(num[0]==son&&num[1]==mom) cout <<"回答正确！"<<endl;
+    if(num[0]==son&&num[1]==mom) {cout <<"回答正确！"<<endl; amount++;}
     else cout <<"答错了！正确答案是："<<son<<'/'<<mom<<endl; 
 }
 void Rand(){
-    int i,temp;
+    int i,temp,e;
     int num[5];
     int sign[5];
     char sym[5]; 
-    char str[11],t;
-    int s1;
+    char str[11];
+    char s1[5],ch;
     int count;
     double s;
-    srand((unsigned)time(NULL));  
     Question q;
     for(i=1;i<=4;i++)
       num[i]=q.randNum();
@@ -221,20 +224,26 @@ void Rand(){
     for(i=1;i<=9;i++)
       cout <<str[i];
     cout <<"=";
-    cin>>s1;
+    cin >>s1;
     str[10]='#';
     s=check(str);
+    if(s1[0]=='g')
+    {
+      cout <<"答对了"<<amount<<"道题"<<endl;
+      cout <<"程序将退出。。。。"<<endl;
+      getchar();
+      getchar();     
+      exit(0);              
+    }
+    else 
+     sscanf(s1,"%d",&e) ;
+    
     if(judge(s))
     {
-    if(s1==1975754292)
-      {
-      cout<<"目前答对了"<<count<<"道题"<<endl;
-      exit(0);
-      }
-    else if(s1!=s) 
-      cout<<"答错了！正确答案是"<<s<<endl; 
-    else 
-      cout<<"回答正确！"<<endl; 
+     if(e==s)
+      {cout <<"回答正确！"<<endl;amount++;}
+     else
+      cout <<"答错了！正确答案是："<<s<<endl; 
     }
     else 
      Rand();   
@@ -248,6 +257,7 @@ int main()
  char L;
  int n,i,m;
  char str[100];
+ char str1[100];
 cout <<"请问要使用哪种语言/Which language do you want to use？(C or E)"<< endl;
 cin >>L;
 if(L=='C')
@@ -259,7 +269,7 @@ if(L=='C')
  cout <<"*********************************************************************"<<endl;
  cin >>m;
  switch(m)
- {
+   {
    case 1: cout <<"☆请输入练习题数n：";
            cin >>n;
            for(i=1;i<=n;i++)
@@ -270,6 +280,7 @@ if(L=='C')
             Rand();                 
                             
            } 
+           break;
         
    case 2: cout <<"☆请输入算式：   （注:以“#”表示结尾,输入g退出程序）"<<endl;
            while(1)
@@ -277,11 +288,15 @@ if(L=='C')
            cin >>str;
            if(str[0]=='g')
             exit(0);
-           else 
-           cout <<"结果是:"<<check(str)<<endl; 
+           else
+           for(i=0;i<strlen(str);i++)
+           {
+             str1[i+1]=str[i];                        
+           } 
+           cout <<"结果是:"<<check(str1)<<endl; 
            }
                  
- }
+   }
  }
 else
  {
@@ -290,6 +305,40 @@ else
  cout <<"***(statistics or the end of the program, please enter g)                             *"<<endl;
  cout <<"*** Along with the calculator function input 1-2 - >exercises system input calculator *"<<endl;
  cout <<"***************************************************************************************"<<endl;
+ cin >>m;
+ switch(m)
+   {
+   case 1: cout <<"☆请输入练习题数n：";
+           cin >>n;
+           for(i=1;i<=n;i++)
+           {
+            if(i%5==0)
+            Fraction();
+            else
+            Rand();                 
+                            
+           } 
+           break;
+        
+   case 2: cout <<"☆请输入算式：   （注:以“#”表示结尾,输入g退出程序）"<<endl;
+           while(1)
+           {
+           cin >>str;
+           if(str[0]=='g')
+            exit(0);
+           else
+           for(i=0;i<strlen(str);i++)
+           {
+             str1[i+1]=str[i];                        
+           } 
+           cout <<"结果是:"<<check(str1)<<endl; 
+           }
+                 
+   }
+ 
+ 
+ 
+ 
  } 
 return 0;
 }
