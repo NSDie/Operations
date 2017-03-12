@@ -1,0 +1,17 @@
+1.中文  2.English  3.日本語の  4.Deutsch  5.French
+*********************************************************************
+***Welcome to the use of the  exercises system for pupils 2.0       *
+***Select the serial number of the language           (exit input g)*
+*********************************************************************
+input1
+☆请输入练习题数n：
+result1
+结果是:
+true1
+答对了
+questions1
+道题
+right1
+回答正确！
+wrong1
+答错了！正确答案是：
