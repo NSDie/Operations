@@ -1,17 +1,73 @@
-1.中文  2.English  3.日本語の  4.Deutsch  5.French
+1.中文  2.English  3.日本語の  4.Deutsch  5.French 
 *********************************************************************
 ***Welcome to the use of the  exercises system for pupils 2.0       *
 ***Select the serial number of the language           (exit input g)*
 *********************************************************************
-input1
+Input1
 ☆请输入练习题数n：
-result1
-结果是:
-true1
-答对了
-questions1
-道题
-right1
+True1
+答对了 
+Questions1
+ 道题
+Right1
 回答正确！
-wrong1
+Wrong1
 答错了！正确答案是：
+Exit1
+程序将退出!
+Input2
+☆Please input the amont of the quetion n：
+Result2
+Result is:
+True2
+You correct  
+Questions2
+ questions
+Right2
+The answer is correct!
+Wrong2
+The answer is wrong!The correct answer is:
+Exit2
+Exit routine
+Input3
+☆練習問題の数量を入力してくださいn：
+Result3
+結果は:
+True3
+正答した 
+Questions3
+ 題の問題に正答
+Right3
+答えが正しい！
+Wrong3
+誤答して誤答した！正しい答えは：
+Exit3
+退出プログラム
+Input4
+☆Bitte geben sie die Zahl der übungenn：
+Result4
+Das ergebnis IST:
+True4
+Bingo 
+Questions4
+ titel
+Right4
+Die richtige antwort！
+Wrong4
+Falsche antwort！Die richtige antwort IST：
+Exit4
+Aus dem Programm
+Input5
+☆Saisissez le nombre d'exercices n：
+Result5
+Le résultat est:
+True5
+Bingo 
+Questions5
+ questions
+Right5
+La réponse correcte！
+Wrong5
+Mauvaise réponse.！La réponse correcte est：
+Exit5
+La procédure de retrait
