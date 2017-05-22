@@ -11,6 +11,7 @@ public :
 	void RandPrint(string str);//打印整数算式
 	int scan();//界面 
 	void printWrong(int s);
+	void printWrongf(int a,int b);
 	void printTrue();
 	void print(int count);//输出统计结果 
 	//int readFile(char *filename);//读取用户要求的题目数量(请注意参数设置)

@@ -1,8 +1,5 @@
 #include "Question.h"
-#include <sstream>
-#include <iostream>
-#include <string>
-using namespace std;
+
 int  Question::randNum()
 {
 
@@ -46,7 +43,7 @@ int Question::check(string str)//用于计算生成的运算式的结果
 	{
 		switch (ch)
 		{
-		case '(':  /*判定为左括号*/
+		case '(':  //判定为左括号
 			top++; stack[top] = ch;
 			break;
 		case ')':  /*判定为右括号*/
@@ -123,13 +120,35 @@ int Question::check(string str)//用于计算生成的运算式的结果
 	}
 	return stack[top];
 }
-bool Question::judge(double a) {
-	int a1;
-	a1 = (int)a;
-	if (a1 == a) return true;
-	else return false;
+int Question::check1(char* str)
+{
+  int i=0;
+  while(str[i]!='/')
+  {
+   i++;                  
+  }
+  int len=i,num=0;
+  for(i=0;i<len;i++)
+  {
+   num = 10*num + str[i] - '0';
+  }
+  return num;
 }
-
+int Question::check2(char* str)
+{
+  int i=0;
+  while(str[i]!='/')
+  {
+   i++;                  
+  }
+  int len=i,num=0;
+  len++;
+ for(i=len;i<strlen(str);i++)
+  {
+   num = 10*num + str[i] - '0';
+   }
+  return num;
+}
 string Question::Rand()
 {
 	string str;
@@ -164,4 +183,43 @@ string Question::Rand()
 	return str;
 
 }
-
+int Question::gcd(int m, int n)
+{
+	if (m < 0)
+		m = 0 - m;
+	if (n < 0)
+		n = 0 - n;
+	for (int c = m%n; c != 0;)
+	{
+		m = n;
+		n = c;
+		c = m%n;
+	}
+	return n;
+}
+string Question::RandF()
+{   
+    string str;
+    stringstream s;
+    int  g1, g2, g3;
+	int aa,bb,cc,dd;
+	aa = 1 + rand() % 5;
+	bb = 1 + rand() % 5;
+	cc = 6 + rand() % 5;
+	dd = 6 + rand() % 5;
+	g1 = gcd(aa, cc);
+	g2 = gcd(bb, dd);
+	aa /= g1;
+	cc /= g1;
+	bb /= g2;
+	dd /= g2;
+	son = aa*dd + bb*cc;
+	mom = cc*dd;
+	g3 = gcd(son, mom);
+	son /= g3;
+	mom /= g3; 
+	s<<aa<<'/'<<cc<<'+'<<bb<<'/'<<dd;
+	str=s.str();
+	s.str("");
+    return str;
+}

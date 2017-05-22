@@ -93,6 +93,10 @@ void Print::printWrong(int s)
 {
  cout<<Map[Wrong]<<s<<endl; 
 }
+void Print::printWrongf(int a,int b)
+{
+ cout<<Map[Wrong]<<a<<'/'<<b<<endl; 
+}
 void Print::print(int count)
 {
  cout << Map[True] << count << Map[Questions] << endl; 
