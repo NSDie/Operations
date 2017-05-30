@@ -1,0 +1,8 @@
+°ÓPlease input the amont of the quetion n£∫
+Result is:
+You correct  
+ questions
+The answer is correct!
+The answer is wrong!The correct answer is:
+Exit routine!
+

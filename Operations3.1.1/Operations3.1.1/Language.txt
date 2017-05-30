@@ -1,0 +1,5 @@
+1.中文  2.English  3.日本語の  4.Deutsch  5.French 
+*********************************************************************
+***Welcome to the use of the  exercises system for pupils 3.1.1     *
+***Select the serial number of the language           (exit input g)*
+*********************************************************************
