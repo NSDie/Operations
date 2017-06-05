@@ -1,17 +1,17 @@
 ﻿#include "stdafx.h"
 #include "Question.h"
 
-int  Question::randNum()
+int  Rand::randNum()
 {
 
 	return 1 + rand() % 9;
 }
-int  Question::randSym()
+int  Rand::randSym()
 {
 
 	return 1 + rand() % 3;
 }
-char Question::symbol(int i) {
+char RandOperation::symbol(int i) {
 	switch (i)
 	{
 	case 1:  return '+';
@@ -157,11 +157,11 @@ string Question::Rand()
 	char sym[5];
 	stringstream s;
 	for (i = 1; i <= 4; i++)
-		num[i] = randNum();
+		num[i] = RN.randNum();
 	for (i = 1; i <= 3; i++)
-		sign[i] = randSym();
+		sign[i] = RO.randSym();
 	for (i = 1; i <= 3; i++)
-		sym[i] = symbol(sign[i]);
+		sym[i] = RO.(sign[i]);
 	for (i = 1; i <= 3; i++)
 	{
 		if (flag == 0)

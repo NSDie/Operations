@@ -4,6 +4,23 @@
 #include <iostream>
 #include <string>
 using namespace std;
+class Rand
+{
+ public:
+	 int randNum();
+	 int randSym();
+};
+class RandNumber : public Rand
+{
+public:
+	
+};
+class RandOperation : public Rand
+{
+public:
+	char symbol(int i);
+
+};
 class Question
 {
 	int son, mom;//分子分母 
@@ -16,10 +33,11 @@ public:
 	{
 		return mom;
 	}
-	int randNum();
-	int randSym();
+	RandNumber RN;
+	RandOperation RO;
+	
 	int gcd(int m, int n);//求最小公倍数
-	char symbol(int i);
+	
 	int check(string str);//计算答案
 	int check1(char* str);//计算答案
 	int check2(char* str);//计算答案
