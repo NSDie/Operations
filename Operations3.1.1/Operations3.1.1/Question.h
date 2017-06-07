@@ -4,20 +4,40 @@
 #include <iostream>
 #include <string>
 using namespace std;
+class RandFactory
+{
+public:
+	Rand* create(int type)
+	{
+		Rand* temp = NULL;
+		switch(type)
+		{
+		case 1: temp = new RandNumber();
+			break;
+		case 2: temp = new RandOperation();
+			break;
+		default:
+			break;
+		}
+		return temp;
+	}
+
+};
 class Rand
 {
  public:
-	 int randNum();
-	 int randSym();
+	virtual int randNum();
+
 };
 class RandNumber : public Rand
 {
 public:
-	
+
 };
 class RandOperation : public Rand
 {
 public:
+	int randNum();
 	char symbol(int i);
 
 };

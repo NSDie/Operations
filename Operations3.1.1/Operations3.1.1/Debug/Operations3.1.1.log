@@ -1,39 +1,4 @@
-﻿  Question.cpp
-c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.cpp(147): warning C4018: “<”: 有符号/无符号不匹配
-c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.cpp(164): error C2059: 语法错误:“(”
-c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.cpp(165): error C2039: “i”: 不是“RandOperation”的成员
-  c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.h(18): note: 参见“RandOperation”的声明
-c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.cpp(167): error C2039: “flag”: 不是“RandOperation”的成员
-  c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.h(18): note: 参见“RandOperation”的声明
-c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.cpp(169): error C2039: “f”: 不是“RandOperation”的成员
-  c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.h(18): note: 参见“RandOperation”的声明
-c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.cpp(169): error C2039: “rand”: 不是“RandOperation”的成员
-  c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.h(18): note: 参见“RandOperation”的声明
-c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.cpp(170): error C2039: “f”: 不是“RandOperation”的成员
-  c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.h(18): note: 参见“RandOperation”的声明
-c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.cpp(172): error C2039: “s”: 不是“RandOperation”的成员
-  c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.h(18): note: 参见“RandOperation”的声明
-c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.cpp(173): error C2039: “flag”: 不是“RandOperation”的成员
-  c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.h(18): note: 参见“RandOperation”的声明
-c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.cpp(176): error C2039: “s”: 不是“RandOperation”的成员
-  c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.h(18): note: 参见“RandOperation”的声明
-c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.cpp(176): error C2039: “num”: 不是“RandOperation”的成员
-  c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.h(18): note: 参见“RandOperation”的声明
-c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.cpp(176): error C2039: “i”: 不是“RandOperation”的成员
-  c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.h(18): note: 参见“RandOperation”的声明
-c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.cpp(176): error C2039: “sym”: 不是“RandOperation”的成员
-  c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.h(18): note: 参见“RandOperation”的声明
-c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.cpp(178): error C2039: “flag”: 不是“RandOperation”的成员
-  c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.h(18): note: 参见“RandOperation”的声明
-c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.cpp(179): error C2039: “s”: 不是“RandOperation”的成员
-  c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.h(18): note: 参见“RandOperation”的声明
-c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.cpp(179): error C2039: “num”: 不是“RandOperation”的成员
-  c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.h(18): note: 参见“RandOperation”的声明
-c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.cpp(181): error C2039: “s”: 不是“RandOperation”的成员
-  c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.h(18): note: 参见“RandOperation”的声明
-c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.cpp(181): error C2039: “num”: 不是“RandOperation”的成员
-  c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.h(18): note: 参见“RandOperation”的声明
-c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.cpp(182): error C2039: “str”: 不是“RandOperation”的成员
-  c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.h(18): note: 参见“RandOperation”的声明
-c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.cpp(182): error C2039: “s”: 不是“RandOperation”的成员
-  c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.h(18): note: 参见“RandOperation”的声明
+﻿  stdafx.cpp
+c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.h(10): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.h(10): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\administrator\operations\operations3.1.1\operations3.1.1\question.h(11): error C2334: “{”的前面有意外标记；跳过明显的函数体

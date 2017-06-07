@@ -6,7 +6,7 @@ int  Rand::randNum()
 
 	return 1 + rand() % 9;
 }
-int  Rand::randSym()
+int  RandOperation::randNum()
 {
 
 	return 1 + rand() % 3;
